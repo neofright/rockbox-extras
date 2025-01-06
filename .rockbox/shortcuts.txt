@@ -1,0 +1,76 @@
+[shortcut]
+type: file
+data: /.rockbox/rockbox.ipod
+name: Soft restart rockbox
+icon: -1
+talkclip:
+
+[shortcut]
+type: file
+data: /.rockbox/themes/iPod-reFresh-one.cfg
+name: iPod-reFresh-one theme
+icon: -1
+talkclip:
+
+[shortcut]
+type: file
+data: /.rockbox/themes/iPod-reFresh-four.cfg
+name: iPod-reFresh-four theme
+icon: -1
+talkclip:
+
+[shortcut]
+type: file
+data: /.rockbox/themes/BONES.cfg
+name: BONES theme
+icon: -1
+talkclip: 
+
+[shortcut]
+type: file
+data: /.rockbox/themes/BONES Orange.cfg
+name: BONES Orange theme
+icon: -1
+talkclip: 
+
+[shortcut]
+type: file
+data: /.rockbox/themes/BONES Lilac.cfg
+name: BONES Lilac theme
+icon: -1
+talkclip: 
+
+[shortcut]
+type: file
+data: /.rockbox/themes/BONES Green.cfg
+name:  BONES Green theme
+icon: -1
+talkclip:
+
+[shortcut]
+type: apply
+data: brightness: 32
+name: 
+icon: -1
+talkclip: 
+
+[shortcut]
+type: apply
+data: brightness: 2
+name: 
+icon: -1
+talkclip: 
+
+[shortcut]
+type: apply
+data: eq enabled: on
+name: 
+icon: -1
+talkclip: 
+
+[shortcut]
+type: apply
+data: eq enabled: off
+name: 
+icon: -1
+talkclip: 
