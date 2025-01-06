@@ -29,6 +29,7 @@
 %xl(T,stop_icon.bmp,0,0)
 %xl(L,play_icon.bmp,0,0)
 %xl(Z,pause_icon.bmp,0,0)
+%xl(BB2,bb2.bmp,0,0)
 #
 #
 #__Show Main Display unless Hold Switch is on
@@ -42,7 +43,7 @@
 #
 #__Track Number
 %Vl(mainDisplay,30,40,120,-,2)
-%alTRACK %in
+%s%alTRACK %pp/%pe
 #
 #__Shuffle
 %Vl(mainDisplay,-110,40,80,-,2)
@@ -57,12 +58,12 @@
 %s%t(6)%ia;%s%t(6)%id
 #
 #__File Type
-%Vl(mainDisplay,30,120,60,-,2)
-%?fc<MP1|MP2|MP3|AIFF|WAV|VORBIS|FLAC|MPC|A52|WAVPAC|ALAC|AAC|SHORTEN|SID|ADX|NSF|SPEEX|SPC|APE|WMA|?>
+%Vl(mainDisplay,30,120,180,-,2)
+%?fc<MP1|MP2|MP3|AIFF|WAV|VORBIS|FLAC|MPC|A52|WAVPAC|ALAC|AAC|SHORTEN|SID|ADX|NSF|SPEEX|SPC|APE|WMA|?> %?fv<~|>%fbkbps %fkkhz
 #
 #__Repeat
-%Vl(mainDisplay,170,120,100,-,2)
-%ar%?mm<|REPEAT|REPEAT|REPEAT|REPEAT> %?mm<|ALL|ONE|SHUFFLE|A-B>
+%Vl(mainDisplay,195,120,80,-,2)
+%ar%?mm<|REPEAT|REPEAT|RPT|REPEAT> %?mm<|ALL|ONE|SHUFFLE|A-B>
 #
 #__Play/Pause Icons
 %Vl(mainDisplay,-41,122,11,11,-)
@@ -87,6 +88,14 @@
 #__Time Total
 %Vl(mainDisplay,-90,190,60,15,2)
 %ar%pt
+#
+#__Battery Bar
+%Vl(mainDisplay,240,21,75,11,-)
+%xd(BB2)
+#
+#__Battery %
+%Vl(mainDisplay,260,20,30,14,2)
+%ar%bl%%
 #
 #
 ###__Hold Screen__###
