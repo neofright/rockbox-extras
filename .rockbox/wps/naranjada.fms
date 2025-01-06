@@ -1,0 +1,157 @@
+# Theme Name: naranjada
+# By: Simon Rothen (rothen@gmx.net)
+# Platform: iBasso DX50, Cowon D2 (320x240x16)
+# Version 3.1
+# License: CC-BY-SA 3.0
+# Theme derived from: "rayboradio_OB" CC-BY-SA 3.0, a theme by Humberto Santana (humbertosantana@hotmail.com)
+# Initial graphics by "Immolate", http://forums.rockbox.org/index.php?topic=12478.msg97821#msg97821
+# naranjada iconset derived from the Tango Small Iconset
+#
+# This theme looks very similar the original rayboradio_OB. The main difference to it are some optimizations for touchscreen targets, 
+# especially for the not yet official port to the iBasso DX50 with its very senitive touchscreen. All credits go to the creators
+# Humberto and Immolate.
+#
+# Last Update: May 22th, 2014
+# First Release: May 22th, 2014
+#
+# FMS File
+#
+# Status bar disabled
+%wd
+#
+# Background
+%X(naranjada_bg.bmp)
+#
+# Additional fonts
+%Fl(3,21-Adobe-Helvetica.fnt)
+#
+#
+# TOUCHSCREEN AREAS
+#
+# Menu
+%T(100,0,120,27,menu)
+#
+# Previous + REW
+%T(86,196,40,44,rwd,repeat_press)
+%T(86,196,40,44,prev)
+#
+# Next + FFW
+%T(193,196,40,44,ffwd,repeat_press)
+%T(193,196,40,44,next)
+#
+# Volume up down
+#%T(230,200,35,40,voldown)
+#%T(230,200,35,40,voldown,long_press)
+#%T(275,200,35,40,volup)
+#%T(275,200,35,40,volup,long_press)
+#
+# Pause/Play + Stop
+%T(133,196,53,44,stop,long_press)
+%T(133,196,53,44,play)
+#
+# Progressbar
+%T(0,180,320,12,progressbar,long_press)
+#
+# Escape/Cancel
+%T(15,200,28,40,cancel)
+#
+# Preset
+%T(58,200,28,40,presets)
+#
+# Quickscreen
+%T(0,0,72,27,quickscreen)
+#
+# Contextmenu
+%T(244,0,76,27,contextmenu)
+#
+#
+# VIEWPORTS
+#
+# Battery
+%xl(a,batt.bmp,0,0,6)
+%V(3,8,23,11,-) 
+%?bp<%?bc<%xd(af)|%xd(ae)>|%?bl<||%xd(aa)|%xd(ab)|%xd(ac)|%xd(ad)|%xd(ad)>>
+%V(30,6,35,13,1)%Vf(B5B5B5)
+%al%bl%%
+#
+# Hold
+%xl(g,hold.bmp,0,0)
+%V(84,6,10,15,-)
+%?mh<%xd(g)|>
+#
+# HDD
+%xl(f,hdd.bmp,0,0)
+%V(227,6,14,15,-)
+%?lh<%xd(f)|>
+#
+# Clock
+%V(259,6,51,18,1)%Vf(B5B5B5)
+%?cc<%ar%?cf<%cH:%cM|%cl:%cM %cp>>
+#
+# Waves for Signal Strength Icon
+%xl(W,radioSignalWaves.bmp,0,0,5)
+%V(147,37,25,16,-)
+#(TO ENABLE, comment the next line out - put a "#" at the beginning - AND uncomment subsecuent line -> remove the "#")
+#%xd(Wd)
+%?tr<|%xd(Wa)|%xd(Wb)|%xd(Wc)|%xd(Wd)|%xd(We)|%xd(We)>
+#
+# Radio Icon
+%xl(R,radio.bmp,0,0)
+%V(136,60,48,37,-)
+%xd(R)
+#
+# Scan/Preset mode
+%V(0,73,110,15,1)%Vf(B5B5B5)%Vb(000000)
+%s%ar%?tm<Scan Mode|Preset %Ti / %Tc>
+#
+# Stereo/Mono - Tuned
+%V(208,73,112,15,1)%Vf(B5B5B5)%Vb(000000)
+%s%al%?ts<Stereo|Mono> %?Tn<%?tt<- Tuned|- Not Tuned>|%?ty<%?tt<- Tuned|- Not Tuned>|>>
+#
+# Station Name/Tuned
+%V(3,115,314,20,3)%Vf(e97f16)%Vb(000000)
+%s%ac%?Tn<%Tn|%?ty<%ty|%?tt<Tuned|Not Tuned>>>
+#
+# RDS Text
+%V(3,138,314,15,1)%Vf(B5B5B5)%Vb(000000)
+%s%ac%?tz<%tz|->
+#
+# Current Frequency
+%V(44,158,232,30,3)%Vf(e97f16)%Vb(000000)
+%ac%tf Mhz
+#
+# Minimum Frequency
+%V(3,167,40,15,1)%Vf(B5B5B5)%Vb(000000)
+%al%ta
+#
+# Maximum Frequency
+%V(277,167,40,15,1)%Vf(B5B5B5)%Vb(000000)
+%ar%tb
+#
+# Escape & Preset Button
+%xl(E,escape.bmp,0,0)
+%xl(P,preset.bmp,56,0,2)
+%V(10,208,72,15,-)
+%xd(E)%?Ti<%xd(Pb)|%xd(Pa)>
+#
+# Progress Bar (FOR A DIAL SLIDER uncomment the next and the 3rd lines, and comment out the 4th line)
+#%xl(D,dial.bmp,0,0)
+%V(0,186,320,4,-)
+#%pb(0,0,320,4,nofill,nobar,slider,D)
+%pb(0,0,320,4,pb.bmp)
+#
+# Play, Pause, FFW, REW
+%xl(m,play_pause.bmp,69,11,2)
+%xl(n,next.bmp,117,6)
+%xl(o,back.bmp,4,6)
+%V(87,198,146,35,-)
+%?mp<|%xd(ma)|%xd(mb)|%xd(n)|%xd(o)|||%xd(ma)|%xd(mb)>
+#
+# Volume
+# remove ",notouch" if you like a touch slider
+%xl(A,volumeknob.bmp,0,0)
+%V(237,209,65,13,-)
+%pv(0,0,-,-,volbar.bmp,notouch,slider,A)
+%V(237,222,64,15,1)%Vf(B5B5B5)
+%ac%pv dB
+
