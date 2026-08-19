@@ -49,20 +49,6 @@ talkclip:
 
 [shortcut]
 type: apply
-data: brightness: 32
-name: 
-icon: -1
-talkclip: 
-
-[shortcut]
-type: apply
-data: brightness: 2
-name: 
-icon: -1
-talkclip: 
-
-[shortcut]
-type: apply
 data: eq enabled: on
 name: 
 icon: -1
