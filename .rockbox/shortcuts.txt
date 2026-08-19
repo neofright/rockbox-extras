@@ -1,7 +1,14 @@
 [shortcut]
 type: file
 data: /.rockbox/rockbox.ipod
-name: Soft restart rockbox
+name: Soft restart iPod
+icon: -1
+talkclip:
+
+[shortcut]
+type: file
+data: /.rockbox/rockbox.erosq
+name: Soft restart Eros Q
 icon: -1
 talkclip:
 
