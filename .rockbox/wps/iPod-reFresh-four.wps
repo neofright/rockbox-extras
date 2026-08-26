@@ -40,6 +40,10 @@
 %xl(M,shuffle.bmp,0,0)
 %xl(N,repeat.bmp,0,0,4)
 %xl(O,hold.bmp,0,0)
+%xl(w,cornerTL.bmp,0,0)
+%xl(x,cornerTR.bmp,122,0)
+%xl(y,cornerBL.bmp,0,122)
+%xl(z,cornerBR.bmp,122,122)
 #
 ##############
 # STATUS BAR #
@@ -78,7 +82,10 @@
 %Cl(0,0,136,136)
 # Album Art
 %V(13,30,136,136,-)
-%?C<%Cd>
+#%?C<%Cd>
+#
+#-- Album art round corners
+%?mh<%Cd%?C<%xd(w)%xd(x)%xd(y)%xd(z)|>|%Cd%?C<%xd(w)%xd(x)%xd(y)%xd(z)|>> #refresh art on Hold
 #
 #-- Title
 %V(163,25,144,30,8)%Vf(ffffff)
